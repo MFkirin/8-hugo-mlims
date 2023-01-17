@@ -172,3 +172,13 @@ section div {
 section table, section div {
   margin: 0 auto;  
 }
+
+div.organizers{
+  display: flex;
+  align-items:center;
+}
+div.organizers img{
+  flex-wrap: wrap;
+  flex:auto;
+
+}
