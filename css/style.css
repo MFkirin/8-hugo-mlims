@@ -102,13 +102,10 @@ nav a, nav span {
 
 /* || main layout */
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 article {
-  flex: 4 ;
+  flex: 4;
 }
 
 section {
@@ -168,12 +165,12 @@ section table, section div {
   margin: 0 auto;  
 }
 
-div.organizers{
+.organizers{
   display: flex;
-  align-items:center;
-}
-div.organizers div img{
   flex-wrap: wrap;
-  flex:auto;
+}
+
+div.organizers img{
+  flex: 1 1 160px;
 
 }
