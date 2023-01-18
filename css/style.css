@@ -177,7 +177,7 @@ div.organizers{
   display: flex;
   align-items:center;
 }
-div.organizers img{
+div.organizers div img{
   flex-wrap: wrap;
   flex:auto;
 
