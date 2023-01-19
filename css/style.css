@@ -1,27 +1,32 @@
 /* || General setup */
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
-html {  
-  background-color: #a9a9a9;
+html {
+  background-color: orange;
 }
 
 body {
-  width: 80%;
+
   margin: 0 auto;
 }
 
 /* || typography */
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Roboto Condensed', cursive;
   color: #2a2a2a;
 }
 
-p, input, li {
+p,
+input,
+li {
   font-family: 'Roboto Condensed', sans-serif;
   color: #2a2a2a;
 }
@@ -41,7 +46,8 @@ h3 {
   font-size: 1.1rem;
 }
 
-p, li {
+p,
+li {
   font-size: 1.1rem;
   line-height: 1.5;
 }
@@ -55,7 +61,13 @@ header {
 }
 
 
-main, header, nav, article, aside, footer, section {
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
   text-align: justify;
 }
 
@@ -68,7 +80,7 @@ header img {
 
   height: 60px;
   margin-top: 5px;
-  
+
 }
 
 nav {
@@ -81,19 +93,19 @@ nav ul {
   padding: 0;
   list-style-type: none;
   flex: 2;
-  display: flex;
-  justify-content: flex-start;
+  
 }
 
 nav li {
   display: inline;
   text-align: center;
-  flex: 1;
+  flex: 1px;
 }
 
-nav a, nav span {
+nav a,
+nav span {
   display: inline-block;
-  font-size: 1.2rem;    
+  font-size: 1.2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -139,12 +151,13 @@ table {
 
 }
 
-video{
-  width:100%;
-  max-width:600px;
-  }
+video {
+  width: 100%;
+  max-width: 600px;
+}
 
-td, th {
+td,
+th {
   border: 1px solid #a9a9a9;
   padding: 10px;
   text-align: center;
@@ -161,16 +174,21 @@ caption {
 section div {
   text-align: center;
 }
-section table, section div {
-  margin: 0 auto;  
+
+section table,
+section div {
+  margin: 0 auto;
 }
 
-.organizers{
-  display: flex;
-  flex-wrap: wrap;
+.organizers {
+  text-align: center;
 }
 
-div.organizers img{
-  flex: 1 1 160px;
 
+.organizers div figure img {
+  width: 100%;
+}
+
+.organizers div {
+  padding: 10px;
 }
