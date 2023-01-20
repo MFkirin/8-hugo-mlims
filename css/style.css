@@ -7,11 +7,11 @@ body {
 }
 
 html {
-  background-color: orange;
-}
+  background-color: rgb(166, 166, 166);}
+
 
 body {
-
+  background-color: rgb(244, 244, 244);
   margin: 0 auto;
 }
 
@@ -55,20 +55,16 @@ li {
 /* || header layout */
 
 header {
+  background-color:rgb(255, 255, 255);
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
 }
 
 
-main,
-header,
-nav,
-article,
-aside,
-footer,
-section {
+main,header,nav,article,aside,footer,section {
   text-align: justify;
+  padding: 0px 10px 0px 10px;
 }
 
 h1 {
@@ -80,23 +76,23 @@ header img {
 
   height: 60px;
   margin-top: 5px;
-
-}
-
-nav {
-  height: 50px;
-  flex: 100%;
   display: flex;
 }
 
-nav ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
+header nav {
+  height: 50px;
+  flex: 100%;
   
 }
 
-nav li {
+header nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+}
+
+header nav li {
   display: inline;
   text-align: center;
   flex: 1px;
@@ -191,4 +187,11 @@ section div {
 
 .organizers div {
   padding: 10px;
+}
+.competitions-image{
+  display: flex;
+}
+.competitions-image img{
+  justify-content:flex-end;
+
 }
