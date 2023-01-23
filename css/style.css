@@ -188,10 +188,7 @@ section div {
 .organizers div {
   padding: 10px;
 }
-.competitions-image{
+.competitions-images{
   display: flex;
-}
-.competitions-image img{
-  justify-content:flex-end;
-
+  justify-content: center;
 }
