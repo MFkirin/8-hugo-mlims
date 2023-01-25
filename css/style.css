@@ -7,20 +7,20 @@ body {
 }
 
 html {
-  background-color: rgb(166, 166, 166);}
-
+  
+  background-image: url("../imagenes/fondo.webp");
+}
 
 body {
   background-color: rgb(244, 244, 244);
   margin: 0 auto;
 }
 
-/* || typography */
-
+/* || Typography */
 h1,
 h2,
 h3 {
-  font-family: 'Roboto Condensed', cursive;
+  font-family: 'Roboto Condensed';
   color: #2a2a2a;
 }
 
@@ -44,6 +44,7 @@ h2 {
 
 h3 {
   font-size: 1.1rem;
+  padding: 20px;
 }
 
 p,
@@ -52,17 +53,22 @@ li {
   line-height: 1.5;
 }
 
-/* || header layout */
-
+/* || Header layout */
 header {
-  background-color:rgb(255, 255, 255);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(121, 9, 78, 1) 18%, rgba(0, 212, 255, 0.7637255585828081) 87%);
   margin-bottom: 10px;
   display: flex;
   flex-flow: row wrap;
 }
 
-
-main,header,nav,article,aside,footer,section {
+main,
+header,
+nav,
+article,
+aside,
+footer,
+section {
   text-align: justify;
   padding: 0px 10px 0px 10px;
 }
@@ -73,7 +79,6 @@ h1 {
 }
 
 header img {
-
   height: 60px;
   margin-top: 5px;
   display: flex;
@@ -82,7 +87,7 @@ header img {
 header nav {
   height: 50px;
   flex: 100%;
-  
+  margin-top: 20px;
 }
 
 header nav ul {
@@ -98,6 +103,23 @@ header nav li {
   flex: 1px;
 }
 
+header nav a {
+  background-color: rgba(106, 13, 92, 0.339);
+  text-decoration: none;
+  background-image: linear-gradient(white, red);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
+header nav a:hover,
+a:focus {
+  background-size: 100% 2px;
+}
+
+
+
 nav a,
 nav span {
   display: inline-block;
@@ -105,13 +127,10 @@ nav span {
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-
+  padding: 5px;
 }
 
-/* || main layout */
-
-
-
+/* || Main layout */
 article {
   flex: 4;
 }
@@ -138,7 +157,8 @@ aside img {
 }
 
 footer {
-  margin-top: 10px;
+  border-top: 2px solid black;
+  margin-top: 40px;
 }
 
 table {
@@ -188,7 +208,34 @@ section div {
 .organizers div {
   padding: 10px;
 }
-.competitions-images{
+
+.competitions-images {
   display: flex;
   justify-content: center;
+}
+
+  
+main nav ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+main nav ul li{
+  margin: 5px;
+  background-color: rgba(89, 226, 181, 0.253);
+}
+.imagen {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+.imagen:hover {
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
 }
