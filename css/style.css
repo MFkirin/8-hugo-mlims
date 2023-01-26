@@ -131,6 +131,16 @@ nav span {
 }
 
 /* || Main layout */
+p{
+  padding: 10px;
+  
+}
+main ul{
+  padding-left:10px ;
+}
+main li{
+  line-height: 30px;
+}
 article {
   flex: 4;
 }
@@ -239,3 +249,11 @@ main nav ul li{
   -ms-filter: blur(0px);
   filter: blur(0px);
 }
+#video_loop{
+  margin-top:20px
+}
+#video_growl_up{
+  margin-top: 20px;
+}
+
+
