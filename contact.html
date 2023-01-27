@@ -5,8 +5,11 @@
     <meta charset="utf-8">
     <title>Beatbox battle</title>
     <link href="css/base.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" >
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
+
 <body class="container">
     <header>
         <h1><a href="index.html"><img src="imagenes/titulo.png" alt=""></a></h1>
@@ -22,86 +25,94 @@
     <main>
         <article>
             <form>
-                <h2>Enrollment form</h2>
-                <h3>Contact information</h3>
-                <p>
-                    <label>Name:<abbr><strong>*</strong></abbr></label>
-                    <input type="text" minlength="3" maxlength="10" required>
-                </p>
-                <p>
-                    <label>Email:<abbr><strong>*</strong></abbr></label>
-                    <input type="text" required>
-                </p>
-                <p>
-                    <label>Phone:<abbr><strong>*</strong></abbr></label>
-                    <input type="text" required>
-                </p>
-                <fieldset>
+                <h2>Enrollment Form</h2>
+                <h3>Contact Information</h3>
+                <div>
+                    <label for="name">Name:<abbr title="required"><strong>*</strong></abbr></label>
+                    <input type="text" id="name" minlength="3" maxlength="10" required>
+                </div>
+                <div>
+                    <label for="email">Email:<abbr title="required"><strong>*</strong></abbr></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:<abbr title="required"><strong>*</strong></abbr></label>
+                    <input type="tel" id="phone" required>
+                </div>
 
-                    <legend>Preferred classes</legend>
+                <fieldset>
+                    <legend>Preferred Classes</legend>
                     <ul>
                         <li>
-                            <input type="radio" value="online">
-                            <label>Online</label>
-
+                            <input type="radio" id="online" name="class-type" value="online">
+                            <label for="online">Online</label>
                         </li>
-
                         <li>
-                            <input type="radio" name="Face-to-face" value="f_to_f">
-                            <label>Face-to-face</label>
+                            <input type="radio" id="f-to-f" name="class-type" value="f-to-f">
+                            <label for="f-to-f">Face-to-face</label>
                         </li>
-
                         <li>
-                            <input type="radio" name="blended" value="blended">
-                            <label>Blended</label>
+                            <input type="radio" id="blended" name="class-type" value="blended">
+                            <label for="blended">Blended</label>
                         </li>
                     </ul>
                 </fieldset>
-                <h3>Payment information</h3>
-                <p>
-                    <label>
-                        <span>Select payment method:</span>
-                        <select>
-                            <option value="Paypal">Paypal</option>
-                            <option value="Credit_card">Credit card</option>
-                            <option value="Wire_transfer">Wire transfer</option>
-                        </select>
-                    </label>
-                </p>
+
+                <h3>Payment Information</h3>
+
+                <div>
+                    <label for="payment-method">Select Payment Method:</label>
+                    <select id="payment-method" name="payment-method">
+                        <option value="paypal">Paypal</option>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="wire-transfer">Wire Transfer</option>
+                    </select>
+                </div>
+
                 <fieldset>
                     <legend>Competitions</legend>
-                    <p>
-                        <input type="checkbox" name="competitions" value="L" checked>
-                        <label>Loopstation</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="competitions" value="S" checked>
-                        <label>Solo</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" name="competitions" value="gu" checked>
-                        <label>Growl up</label>
-                    </p>
+                    <div>
+                        <input type="checkbox" id="loopstation" name="competitions" value="loopstation" checked>
+                        <label for="loopstation">Loopstation</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="solo" name="competitions" value="solo" checked>
+                        <label for="solo">Solo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="growl-up" name="competitions" value="growl-up" checked>
+                        <label for="growl-up">Growl Up</label>
+                    </div>
                 </fieldset>
-                <p>
-                    <label>Additional comments</label>
-                </p>
-                <p>
-                    <textarea id="msg" name="Comments" cols="30" rows="6"></textarea>
-                </p>
-                <p>
-                    <button type="submit" name="submit">Send form</button>
+                <label for="comments">Additional Comments</label>
+                <div>
+
+                    <textarea id="comments" name="comments" cols="30" rows="6"></textarea>
+                </div>
+                <div>
+                    <button type="submit" name="submit">Send Form</button>
                     <button type="reset" name="reset">Reset</button>
-                </p>
+                </div>
             </form>
         </article>
     </main>
-    <footer>
+    <footer class="footer">
 
-        <p> Contact the author of this page:</p>
-        <a href="mailto:algo@mail.com">algo@gmail.com</a> <br>
 
-        <a href="tel:+34-600-500-500"> +34 111 111 111</a> <br>
+        <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://swissbeatbox.com/about-us/" target="_blank">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <ul class="social_footer_ul">
+                <li><a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fswissbeatbox%2F"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/swissbeatbox?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/swissbeatbox/?hl=es"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            <p class="text-center">Copyright @2022 | Designed With by <a href="#">Your Company Name</a></p>
+        </div>
     </footer>
 </body>
 
