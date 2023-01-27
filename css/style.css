@@ -104,9 +104,9 @@ header nav li {
 }
 
 header nav a {
-  background-color: rgba(106, 13, 92, 0.339);
+  color: antiquewhite;
   text-decoration: none;
-  background-image: linear-gradient(white, red);
+  background-image: linear-gradient(white, rgb(221, 180, 180));
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -233,11 +233,12 @@ main nav ul {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: #979494;
 }
 
 main nav ul li {
   margin: 5px;
-  background-color: rgba(89, 226, 181, 0.253);
+  
 }
 
 
@@ -274,7 +275,7 @@ footer p {
 
 
 .bottom_border {
-  border-bottom: 1px solid #323f45;
+  border-bottom: 1px solid ;
   padding-bottom: 20px;
 }
 
@@ -379,4 +380,7 @@ select {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #f1f1f1;
+}
+.imagen{
+  border: 2px solid #080a0c;
 }
