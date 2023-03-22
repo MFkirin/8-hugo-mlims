@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Books</title>
+  <script src="script/main.js"></script>
+  <style>
+    * {
+      font-size: 18px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      width: 700px;
+      margin: 0 auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    label {
+      display: block;
+      margin: 1em 0;
+    }
+
+    label input {
+      display: block;
+    }
+
+    div {
+      margin: 0.5em 0
+    }
+
+    .text-red {
+      color: red;
+    }
+
+    table {          
+      border: 1px solid rosybrown;
+      border-collapse: collapse;
+    }
+
+    tr:nth-child(odd) {
+      background-color: antiquewhite;
+    }
+
+    td, th {
+      padding: 1em;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <h1>Task 607: Table</h1>
+  <div>
+    <label>Title
+      <input type="text" name="title">
+    </label>
+    <label>Author
+      <input type="text" name="author">
+    </label>
+    <label>Year
+      <input type="number" name="year">
+    </label>
+    <button type="button" id="button-generate">New book</button>
+  </div>
+  <!-- This is an example of how table data should be shown. It should be
+  created dinamically -->
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Author</th>
+        <th scope="col">Year</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>0</td>
+        <td>The Catcher in the Rye</td>
+        <td>J.D. Salinger</td>
+        <td>1951</td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>1960</td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>1949</td>
+        <td><button type="button">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
